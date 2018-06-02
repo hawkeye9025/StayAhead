@@ -7,15 +7,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 
 @Controller
-@RequestMapping("/stayahead")
+@RequestMapping("/")
 public class stayAheadController {
-	
-		
 		@RequestMapping(method = RequestMethod.GET)
 		public String StayAhead(ModelMap model) {
 			model.addAttribute("message", "Stay Ahead!");
 			return "stayahead";
 		}
-
-
 }
